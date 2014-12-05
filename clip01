@@ -21,7 +21,7 @@ function Demo(){
         console.log("testDemo");
         }
         
-    };
+};
         
   var demoA = new Demo();
   demoA.testJs();
