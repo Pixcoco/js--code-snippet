@@ -1,0 +1,28 @@
+<script> 
+//对象写法一
+var myDog = {
+    "name" : "Spot",
+    "bark" : function() { alert("Woof!"); },
+    "displayFullName" : function() {
+        alert(this.name + "The Alpha Dog");
+    },
+    "chaseMrPostman" : function() { 
+        // implementation beyond the scope of this article 
+    }    
+};
+myDog.displayFullName(); 
+myDog.bark(); // Woof!
+
+//对象写法二
+function Demo(){
+        console.log("test");
+        Demo.testJs = function(){
+          console.log(this); 
+        console.log("testDemo");
+        }
+        
+    };
+        
+  var demoA = new Demo();
+  demoA.testJs();
+</script>
